@@ -16,7 +16,7 @@ app.set('views', './src/views/');
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views/index.html'));
+  res.render('index', { list: ['a', 'b'], title: 'Libary' });
 });
 
 app.listen(port, () => {
