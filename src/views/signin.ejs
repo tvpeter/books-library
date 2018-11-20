@@ -6,12 +6,12 @@
 		<title><%= title %></title>
 		<meta name="generator" content="Bootply" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
 		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
 		<!--[if lt IE 9]>
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		<link href="css/styles.css" rel="stylesheet">
+		<link href="/css/styles.css" rel="stylesheet">
 	</head>
 	<body>
 <header class="navbar navbar-bright navbar-fixed-top" role="banner">
@@ -93,17 +93,16 @@
           <div class="row">    
             <br>
             <div class="col-md-2 col-sm-3 text-center">
-              SignUP! or <a href="/auth/signin">Sign In</a>
-              <form action="/auth/signup" method="POST">
+              Sign In!
+              <form action="/auth/signin" method="POST" name="signInForm">
               Username: <input type="text" id="username" name="username" ><br>
               Password: <input type="text" name="password" id="password"><br>
-              <input type="submit" value="Sign Up">
+              <input type="submit" value="Sign In">
               </form>
             </div>
           </div>
           <hr>
-          
-                    
+                              
         </div>
       </div>
                                                                                        
@@ -155,6 +154,6 @@
 </footer>
 	<!-- script references -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
 	</body>
 </html>
